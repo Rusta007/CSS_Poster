@@ -1,0 +1,70 @@
+.elem{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: red;
+    margin: 14% 40%;
+    transition: all 0.5s ease-out;
+    animation: box 2s infinite linear;
+}
+.elem:hover{
+    border-radius: 0%;
+
+}
+nav {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  a {
+    flex: 1;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+  }
+  
+  a:hover,
+  a:focus {
+    background-color: #fff;
+    color: #333;
+  }
+body{
+    background-color: black;
+}
+@keyframes box{
+    0%{
+        background-color: aliceblue;
+    }
+    25%{
+        background-color: blueviolet;
+    }
+    50%{
+        background-color: brown;
+    }
+    75%{
+        background-color: yellow;
+    }
+    100%
+    {
+        background-color: aliceblue;
+    }
+}
+@media screen and (max-width:320px) {
+    .elem{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: red;
+        margin: 37% 23%;
+        transition: all 0.5s ease-out;
+        animation: box 2s infinite linear;
+    }
+    .elem:hover{
+        border-radius: 0%;
+    
+    }
+}
